@@ -24,17 +24,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         produto=findViewById(R.id.produtoid);
         marca=findViewById(R.id.marcaid);
         quantidade=findViewById(R.id.quantidadeid);
 
-        dados = new ArrayList<>();
+        dados = new ArrayList();
         listagem = findViewById(R.id.listaid);
         ArrayAdapter adapter = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,dados);
         listagem.setAdapter(adapter);
 
     }
-    public void salvar(View view){
+    public void salvar (View view){
         lista lista = new lista();
         lista.setProduto(produto.getText().toString());
         lista.setMarca(marca.getText().toString());

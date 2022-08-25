@@ -18,7 +18,7 @@ public class lista {
     @Override
     public String toString()
     {
-        return "produto: "+produto+" marca: "+marca+" quantidade: "+quantidade;
+        return "Produto: "+produto+" |marca: "+marca+" | quantidade: "+quantidade;
     }
 
 }
